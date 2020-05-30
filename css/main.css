@@ -23,6 +23,19 @@ main, .content{
     width: 70%;
 }
 
+.menu-1{
+    float: right;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.menu-1 a{
+    padding: 5px;
+    text-decoration: none;
+    color: #b8b8b8;
+    text-shadow: 1px #efefef;
+}
+
 .header-2{
     background-color: #ffffff;
     width: 980px;
@@ -31,7 +44,7 @@ main, .content{
 }
 
 .menu-urls{
-    height: 80px;
+    height: 120px;
     border-bottom: 5px solid #efefef;
 }
 
@@ -51,9 +64,36 @@ main, .content{
     text-decoration: none;
     font-size: 17px;
 }
+
+.menu ul li{
+	position: relative;
+	display: inline-block;
+	color: #8b8b8b;
+	margin-left: 20px;
+}
 .menu{
     width: 70%;
     float: left;
+}
+
+.menu li  ul{
+    position:absolute; 
+    top:25px; 
+    left:0;
+    background-color:#fff; 
+    display:none;
+}
+
+.menu li a:hover{
+    background:#333; 
+    color:#fff; 
+    -moz-box-shadow:0 3px 10px 0 #CCC; 
+    -webkit-box-shadow:0 3px 10px 0 #ccc; 
+    text-shadow:0px 0px 5px #fff; 
+}
+    
+.menu li:hover ul, .menu li.over ul{
+        display:block;
 }
 
 .buscar{
@@ -77,6 +117,14 @@ main, .content{
     width: 100%;
     float: left;
     position: relative;
+}
+
+footer{
+    clear: both;
+    background-color: #8b8b8b;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
 }
 
 button.slick-prev{
@@ -184,7 +232,15 @@ h3{
 }
 
 .bloco-imagem-texto{
-    background-color: #000000;
+    background-color: #eeeeee;
+}
+
+.bloco-imagem-texto ::after{
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 70px;
+    background: #eeeeee;
 }
 
 .col-4{
